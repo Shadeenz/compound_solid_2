@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.058161560755093475 -0.9270925768620837 -0.3702925691635644 2.852389961234445
-  position -1.2816084929674973 2.4751522255060037 -2.2162367302567825
+  orientation 0.03414969483573777 -0.9975041980836473 -0.061799459124863974 4.149135696823216
+  position 2.804999830262821 1.0711016616764406 -2.827327305286191
 }
 TexturedBackground {
 }
@@ -187,7 +187,7 @@ Solid {
             }
           ]
         }
-        DEF S_CYL4 Transform {
+        DEF S_CYL8 Transform {
           translation 0 0 -0.36
           rotation 0 0 1 0
           children [
@@ -223,6 +223,61 @@ Solid {
               }
               geometry Sphere {
                 radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_CYL9 Transform {
+          translation -0.36 0 -0.36
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.36
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_CYL10 Transform {
+          translation -0.18 -0.18 -0.36
+          rotation 0 0 1 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.36
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_CYL11 Transform {
+          translation -0.36 0.18 -0.18
+          rotation 1 0 0 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.36
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_CYL12 Transform {
+          translation -0.36 -0.18 -0.18
+          rotation 1 0 0 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.36
+                radius 0.03
               }
             }
           ]
